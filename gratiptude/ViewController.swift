@@ -12,9 +12,9 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var billField: UITextField!
     @IBOutlet weak var taxField: UITextField!
+    @IBOutlet weak var tipControl: UISegmentedControl!
     @IBOutlet weak var tipLabel: UILabel!
     @IBOutlet weak var totalLabel: UILabel!
-    @IBOutlet weak var tipControl: UISegmentedControl!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,6 +23,7 @@ class ViewController: UIViewController {
         defaults.set(1, forKey: "myTip")
         defaults.synchronize()
         tipControl.selectedSegmentIndex = defaults.object(forKey: "myTip") as! Int
+        billField.becomeFirstResponder()
         print("view did load")
     }
     
@@ -31,6 +32,7 @@ class ViewController: UIViewController {
         let defaults = UserDefaults.standard
         let tipIndex = defaults.object(forKey: "myTip") as! Int
         tipControl.selectedSegmentIndex = tipIndex
+        calculateTip(sender: view)
         print("view will appear")
     }
     
