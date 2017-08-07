@@ -27,7 +27,7 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-[Video walkthrough](anim_gratiptude_v1.gif)
+![Video walkthrough](anim_gratiptude_v1.gif)
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
@@ -41,7 +41,7 @@ As part of your pre-work submission, please reflect on the app and answer the fo
 
 Outlets are a means of gathering dynamic data from the UI such as user inputs, and Actions are functions to act on data and update the UI during runtime. Each outlet has a destination and a unique ID, as does each action. They are implemented as connections tying UI elements to the ViewController code.
 
-Question 2: "Swift uses [Automatic Reference Counting](https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/AutomaticReferenceCounting.html#//apple_ref/doc/uid/TP40014097-CH20-ID49) (ARC), which is not a garbage collector, to manage memory. Can you explain how you can get a strong reference cycle for closures? (There's a section explaining this concept in the link, how would you summarize as simply as possible?)"
+**Question 2**: "Swift uses [Automatic Reference Counting](https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/AutomaticReferenceCounting.html#//apple_ref/doc/uid/TP40014097-CH20-ID49) (ARC), which is not a garbage collector, to manage memory. Can you explain how you can get a strong reference cycle for closures? (There's a section explaining this concept in the link, how would you summarize as simply as possible?)"
 
 **Answer:** A strong reference cycle can occur wtih a closure in an instance for a class if the closure captures the instance itself. This commonly happens when a closure will need to access a property or method of the instance. When an instance is initalized, you assign a strong reference to the closure. If the closure accesses a property or method from the instance, it forms a strong reference back to the instance. These two strong references will then keep the instance and the closure alive; since the reference count for each is at least '1', ARC cannot free up the memory for that instance or the closure.
 
