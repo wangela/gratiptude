@@ -1,0 +1,6 @@
+framework module Pods_gratiptudeTests {
+  umbrella header "Pods-gratiptudeTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

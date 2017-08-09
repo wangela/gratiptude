@@ -8,13 +8,14 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
     @IBOutlet weak var billField: UITextField!
     @IBOutlet weak var taxField: UITextField!
     @IBOutlet weak var tipControl: UISegmentedControl!
     @IBOutlet weak var tipLabel: UILabel!
     @IBOutlet weak var totalLabel: UILabel!
+    let imgPicker = UIImagePickerController()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,6 +25,7 @@ class ViewController: UIViewController {
         defaults.synchronize()
         tipControl.selectedSegmentIndex = defaults.object(forKey: "myTip") as! Int
         billField.becomeFirstResponder()
+        imgPicker.delegate = self
         print("view did load")
     }
     
@@ -60,6 +62,34 @@ class ViewController: UIViewController {
         view.endEditing(true)
     }
     
+    @IBAction func openCamera(_ sender: Any) {
+        if (UIImagePickerController.isSourceTypeAvailable(UIImagePickerControllerSourceType.camera)) {
+            imgPicker.sourceType = UIImagePickerControllerSourceType.camera
+            imgPicker.allowsEditing = false
+            imgPicker.cameraCaptureMode = .photo
+            imgPicker.modalPresentationStyle = .fullScreen
+            present(imgPicker, animated: true, completion: nil)
+        } else {
+            noCamera()
+        }
+    }
+    
+    func noCamera(){
+        let alertVC = UIAlertController(
+            title: "No Camera",
+            message: "Sorry, this device has no camera",
+            preferredStyle: .alert)
+        let okAction = UIAlertAction(
+            title: "OK",
+            style:.default,
+            handler: nil)
+        alertVC.addAction(okAction)
+        present(
+            alertVC,
+            animated: true,
+            completion: nil)
+    }
+    
     @IBAction func calculateTip(_ sender: Any) {
         let tipPercentages = [0.15, 0.18, 0.2, 0.25]
         
@@ -72,6 +102,16 @@ class ViewController: UIViewController {
         taxField.text = String(format: "%.2f", tax)
         tipLabel.text = String(format: "$%.2f", tip)
         totalLabel.text = String(format: "$%.2f", total)
+    }
+    
+    //MARK: - Delegates
+    func imagePickerController(_ picker: UIImagePickerController,
+                               didFinishPickingMediaWithInfo info: [String : AnyObject])
+    {
+        
+    }
+    func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
+        
     }
 }
 
