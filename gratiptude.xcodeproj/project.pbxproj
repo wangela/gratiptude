@@ -17,6 +17,7 @@
 		772371F91F33127B00FF0DA8 /* gratiptudeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 772371F81F33127B00FF0DA8 /* gratiptudeUITests.swift */; };
 		772372071F352F5D00FF0DA8 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 772372061F352F5D00FF0DA8 /* SettingsViewController.swift */; };
 		7777516F1F3A6A1000DCFA99 /* tessdata in Resources */ = {isa = PBXBuildFile; fileRef = 7777516E1F3A6A1000DCFA99 /* tessdata */; };
+		778498711F3BA76500D44F18 /* image_sample.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 778498701F3BA76500D44F18 /* image_sample.jpg */; };
 		7ADFE0BCC34AF73F40001009 /* Pods_gratiptude.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67AC55E87BC468C489E96D4B /* Pods_gratiptude.framework */; };
 		A124B6403D3B77AC51F633D3 /* Pods_gratiptudeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C90A161980BA2F3B19D1D0A3 /* Pods_gratiptudeUITests.framework */; };
 /* End PBXBuildFile section */
@@ -58,6 +59,7 @@
 		772371FA1F33127B00FF0DA8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		772372061F352F5D00FF0DA8 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SettingsViewController.swift; path = ../SettingsViewController.swift; sourceTree = "<group>"; };
 		7777516E1F3A6A1000DCFA99 /* tessdata */ = {isa = PBXFileReference; lastKnownFileType = folder; path = tessdata; sourceTree = "<group>"; };
+		778498701F3BA76500D44F18 /* image_sample.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image_sample.jpg; sourceTree = "<group>"; };
 		803D318FCA96F456D1633240 /* Pods-gratiptudeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gratiptudeUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-gratiptudeUITests/Pods-gratiptudeUITests.release.xcconfig"; sourceTree = "<group>"; };
 		82E7EC7A4CE3C41EB7CFC6C6 /* Pods-gratiptudeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gratiptudeTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-gratiptudeTests/Pods-gratiptudeTests.release.xcconfig"; sourceTree = "<group>"; };
 		AFFD6499B21AB72D52D0BB57 /* Pods-gratiptude.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gratiptude.debug.xcconfig"; path = "Pods/Target Support Files/Pods-gratiptude/Pods-gratiptude.debug.xcconfig"; sourceTree = "<group>"; };
@@ -128,6 +130,7 @@
 		772371D71F33127B00FF0DA8 /* gratiptude */ = {
 			isa = PBXGroup;
 			children = (
+				778498701F3BA76500D44F18 /* image_sample.jpg */,
 				7777516E1F3A6A1000DCFA99 /* tessdata */,
 				772371D81F33127B00FF0DA8 /* AppDelegate.swift */,
 				772371DA1F33127B00FF0DA8 /* ViewController.swift */,
@@ -288,6 +291,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				772371E31F33127B00FF0DA8 /* LaunchScreen.storyboard in Resources */,
+				778498711F3BA76500D44F18 /* image_sample.jpg in Resources */,
 				7777516F1F3A6A1000DCFA99 /* tessdata in Resources */,
 				772371E01F33127B00FF0DA8 /* Assets.xcassets in Resources */,
 				772371DE1F33127B00FF0DA8 /* Main.storyboard in Resources */,
@@ -547,6 +551,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_BITCODE = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -563,9 +568,11 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_MASTER_OBJECT_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				"OTHER_LDFLAGS[arch=*]" = "-lstdc++";
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -597,6 +604,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = NO;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -607,8 +615,10 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_MASTER_OBJECT_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				"OTHER_LDFLAGS[arch=*]" = "-lstdc++";
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				VALIDATE_PRODUCT = YES;
@@ -620,6 +630,7 @@
 			baseConfigurationReference = AFFD6499B21AB72D52D0BB57 /* Pods-gratiptude.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = gratiptude/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.wangela.gratiptude;
@@ -633,6 +644,7 @@
 			baseConfigurationReference = FD3297EDE8B1736BE4F31CF7 /* Pods-gratiptude.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = gratiptude/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.wangela.gratiptude;
