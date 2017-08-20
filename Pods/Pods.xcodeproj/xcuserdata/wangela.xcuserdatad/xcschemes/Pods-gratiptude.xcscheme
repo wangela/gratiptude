@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "BB877FD496005294E8F196E013225958"
+               BlueprintIdentifier = "153ADC444ECBF0085C5892ADE82762B7"
                BuildableName = "Pods_gratiptude.framework"
                BlueprintName = "Pods-gratiptude"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "BB877FD496005294E8F196E013225958"
+            BlueprintIdentifier = "153ADC444ECBF0085C5892ADE82762B7"
             BuildableName = "Pods_gratiptude.framework"
             BlueprintName = "Pods-gratiptude"
             ReferencedContainer = "container:Pods.xcodeproj">

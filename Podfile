@@ -6,15 +6,15 @@ target 'gratiptude' do
   use_frameworks!
 
   # Pods for gratiptude
-  pod 'TesseractOCRiOS', :git => 'https://github.com/gali8/Tesseract-OCR-iOS.git'
-  
-  post_install do |installer|
-      installer.pods_project.targets.each do |target|
-          target.build_configurations.each do |config|
-              config.build_settings['ENABLE_BITCODE'] = 'NO'
-          end
-      end
-  end
+#  pod 'TesseractOCRiOS', :git => 'https://github.com/gali8/Tesseract-OCR-iOS.git'
+#  
+#  post_install do |installer|
+#      installer.pods_project.targets.each do |target|
+#          target.build_configurations.each do |config|
+#              config.build_settings['ENABLE_BITCODE'] = 'NO'
+#          end
+#      end
+#  end
   
   target 'gratiptudeTests' do
     inherit! :search_paths

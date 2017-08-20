@@ -19,20 +19,10 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>TesseractOCRiOS.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>4B86CC809D16D402E98FCC2472910389</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>BB877FD496005294E8F196E013225958</key>
+		<key>153ADC444ECBF0085C5892ADE82762B7</key>
 		<dict>
 			<key>primary</key>
 			<true/>

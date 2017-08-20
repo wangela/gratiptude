@@ -1,21 +1,3 @@
-PODS:
-  - TesseractOCRiOS (4.0.0)
-
-DEPENDENCIES:
-  - TesseractOCRiOS (from `https://github.com/gali8/Tesseract-OCR-iOS.git`)
-
-EXTERNAL SOURCES:
-  TesseractOCRiOS:
-    :git: https://github.com/gali8/Tesseract-OCR-iOS.git
-
-CHECKOUT OPTIONS:
-  TesseractOCRiOS:
-    :commit: c7ad56d6544839b2f84c7ffde8fa42efe2312405
-    :git: https://github.com/gali8/Tesseract-OCR-iOS.git
-
-SPEC CHECKSUMS:
-  TesseractOCRiOS: 729989db3984bb60ba3addb053569b172d48c409
-
-PODFILE CHECKSUM: 32af55fe01fec55493393447f67a67fd5872dda4
+PODFILE CHECKSUM: 6b580ad0ebf1e9a92e9ba197b6befff7c73405ad
 
 COCOAPODS: 1.3.1

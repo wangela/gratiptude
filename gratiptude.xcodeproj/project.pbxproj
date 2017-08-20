@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		01A8B3B7583B4BC98FD5EB39 /* Pods_gratiptudeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 459A69CA92E6691C18AA0257 /* Pods_gratiptudeTests.framework */; };
+		3C0F8422327A97C2A1089DC7 /* Pods_gratiptude.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E334A6FCA3F60A7DA6970A43 /* Pods_gratiptude.framework */; };
+		444814369ADAEE1FA179D764 /* Pods_gratiptudeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B07E705BEB5F9C0F572EC5B2 /* Pods_gratiptudeTests.framework */; };
 		772371D91F33127B00FF0DA8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 772371D81F33127B00FF0DA8 /* AppDelegate.swift */; };
 		772371DB1F33127B00FF0DA8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 772371DA1F33127B00FF0DA8 /* ViewController.swift */; };
 		772371DE1F33127B00FF0DA8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 772371DC1F33127B00FF0DA8 /* Main.storyboard */; };
@@ -18,9 +19,7 @@
 		772372071F352F5D00FF0DA8 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 772372061F352F5D00FF0DA8 /* SettingsViewController.swift */; };
 		7777516F1F3A6A1000DCFA99 /* tessdata in Resources */ = {isa = PBXBuildFile; fileRef = 7777516E1F3A6A1000DCFA99 /* tessdata */; };
 		778498711F3BA76500D44F18 /* image_sample.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 778498701F3BA76500D44F18 /* image_sample.jpg */; };
-		77EC7F331F49534400671153 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 77EC7F321F49534400671153 /* libz.tbd */; };
-		7ADFE0BCC34AF73F40001009 /* Pods_gratiptude.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67AC55E87BC468C489E96D4B /* Pods_gratiptude.framework */; };
-		A124B6403D3B77AC51F633D3 /* Pods_gratiptudeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C90A161980BA2F3B19D1D0A3 /* Pods_gratiptudeUITests.framework */; };
+		D8EA4B045FD75B1798C981DF /* Pods_gratiptudeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95FCFBCE49CF7F3CFA513D70 /* Pods_gratiptudeUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,10 +40,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		12ADAA81378D824FA6DF370F /* Pods-gratiptudeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gratiptudeTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-gratiptudeTests/Pods-gratiptudeTests.debug.xcconfig"; sourceTree = "<group>"; };
-		34042BEDE46BCFC61AB255AC /* Pods-gratiptudeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gratiptudeUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-gratiptudeUITests/Pods-gratiptudeUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		459A69CA92E6691C18AA0257 /* Pods_gratiptudeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_gratiptudeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		67AC55E87BC468C489E96D4B /* Pods_gratiptude.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_gratiptude.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		51B4C2E3B66B4293C6DBC0CE /* Pods-gratiptude.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gratiptude.release.xcconfig"; path = "Pods/Target Support Files/Pods-gratiptude/Pods-gratiptude.release.xcconfig"; sourceTree = "<group>"; };
+		6DB9801129000A0F6FBA1FA3 /* Pods-gratiptudeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gratiptudeTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-gratiptudeTests/Pods-gratiptudeTests.debug.xcconfig"; sourceTree = "<group>"; };
+		7455B651C8C5F23A9A918DF6 /* Pods-gratiptude.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gratiptude.debug.xcconfig"; path = "Pods/Target Support Files/Pods-gratiptude/Pods-gratiptude.debug.xcconfig"; sourceTree = "<group>"; };
 		772371D51F33127B00FF0DA8 /* gratiptude.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = gratiptude.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		772371D81F33127B00FF0DA8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		772371DA1F33127B00FF0DA8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -61,12 +59,12 @@
 		772372061F352F5D00FF0DA8 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SettingsViewController.swift; path = ../SettingsViewController.swift; sourceTree = "<group>"; };
 		7777516E1F3A6A1000DCFA99 /* tessdata */ = {isa = PBXFileReference; lastKnownFileType = folder; path = tessdata; sourceTree = "<group>"; };
 		778498701F3BA76500D44F18 /* image_sample.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image_sample.jpg; sourceTree = "<group>"; };
-		77EC7F321F49534400671153 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
-		803D318FCA96F456D1633240 /* Pods-gratiptudeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gratiptudeUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-gratiptudeUITests/Pods-gratiptudeUITests.release.xcconfig"; sourceTree = "<group>"; };
-		82E7EC7A4CE3C41EB7CFC6C6 /* Pods-gratiptudeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gratiptudeTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-gratiptudeTests/Pods-gratiptudeTests.release.xcconfig"; sourceTree = "<group>"; };
-		AFFD6499B21AB72D52D0BB57 /* Pods-gratiptude.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gratiptude.debug.xcconfig"; path = "Pods/Target Support Files/Pods-gratiptude/Pods-gratiptude.debug.xcconfig"; sourceTree = "<group>"; };
-		C90A161980BA2F3B19D1D0A3 /* Pods_gratiptudeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_gratiptudeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		FD3297EDE8B1736BE4F31CF7 /* Pods-gratiptude.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gratiptude.release.xcconfig"; path = "Pods/Target Support Files/Pods-gratiptude/Pods-gratiptude.release.xcconfig"; sourceTree = "<group>"; };
+		95FCFBCE49CF7F3CFA513D70 /* Pods_gratiptudeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_gratiptudeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A6F039109E8E6204B87F1A07 /* Pods-gratiptudeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gratiptudeUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-gratiptudeUITests/Pods-gratiptudeUITests.release.xcconfig"; sourceTree = "<group>"; };
+		B07E705BEB5F9C0F572EC5B2 /* Pods_gratiptudeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_gratiptudeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C5EDEB7473F51B5CA1891027 /* Pods-gratiptudeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gratiptudeUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-gratiptudeUITests/Pods-gratiptudeUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		E334A6FCA3F60A7DA6970A43 /* Pods_gratiptude.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_gratiptude.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E3DA00C3DECECB3BF1BC660B /* Pods-gratiptudeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gratiptudeTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-gratiptudeTests/Pods-gratiptudeTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,8 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				77EC7F331F49534400671153 /* libz.tbd in Frameworks */,
-				7ADFE0BCC34AF73F40001009 /* Pods_gratiptude.framework in Frameworks */,
+				3C0F8422327A97C2A1089DC7 /* Pods_gratiptude.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,7 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				01A8B3B7583B4BC98FD5EB39 /* Pods_gratiptudeTests.framework in Frameworks */,
+				444814369ADAEE1FA179D764 /* Pods_gratiptudeTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,20 +88,32 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A124B6403D3B77AC51F633D3 /* Pods_gratiptudeUITests.framework in Frameworks */,
+				D8EA4B045FD75B1798C981DF /* Pods_gratiptudeUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2C8465C9A1ED748DFD927389 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7455B651C8C5F23A9A918DF6 /* Pods-gratiptude.debug.xcconfig */,
+				51B4C2E3B66B4293C6DBC0CE /* Pods-gratiptude.release.xcconfig */,
+				6DB9801129000A0F6FBA1FA3 /* Pods-gratiptudeTests.debug.xcconfig */,
+				E3DA00C3DECECB3BF1BC660B /* Pods-gratiptudeTests.release.xcconfig */,
+				C5EDEB7473F51B5CA1891027 /* Pods-gratiptudeUITests.debug.xcconfig */,
+				A6F039109E8E6204B87F1A07 /* Pods-gratiptudeUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		48AADEF713C3905ACBAEC838 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				77EC7F321F49534400671153 /* libz.tbd */,
-				67AC55E87BC468C489E96D4B /* Pods_gratiptude.framework */,
-				459A69CA92E6691C18AA0257 /* Pods_gratiptudeTests.framework */,
-				C90A161980BA2F3B19D1D0A3 /* Pods_gratiptudeUITests.framework */,
+				E334A6FCA3F60A7DA6970A43 /* Pods_gratiptude.framework */,
+				B07E705BEB5F9C0F572EC5B2 /* Pods_gratiptudeTests.framework */,
+				95FCFBCE49CF7F3CFA513D70 /* Pods_gratiptudeUITests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -116,8 +125,8 @@
 				772371EC1F33127B00FF0DA8 /* gratiptudeTests */,
 				772371F71F33127B00FF0DA8 /* gratiptudeUITests */,
 				772371D61F33127B00FF0DA8 /* Products */,
-				EC17E5A42231250308BDA9F8 /* Pods */,
 				48AADEF713C3905ACBAEC838 /* Frameworks */,
+				2C8465C9A1ED748DFD927389 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -165,19 +174,6 @@
 			path = gratiptudeUITests;
 			sourceTree = "<group>";
 		};
-		EC17E5A42231250308BDA9F8 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				AFFD6499B21AB72D52D0BB57 /* Pods-gratiptude.debug.xcconfig */,
-				FD3297EDE8B1736BE4F31CF7 /* Pods-gratiptude.release.xcconfig */,
-				12ADAA81378D824FA6DF370F /* Pods-gratiptudeTests.debug.xcconfig */,
-				82E7EC7A4CE3C41EB7CFC6C6 /* Pods-gratiptudeTests.release.xcconfig */,
-				34042BEDE46BCFC61AB255AC /* Pods-gratiptudeUITests.debug.xcconfig */,
-				803D318FCA96F456D1633240 /* Pods-gratiptudeUITests.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -185,12 +181,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 772371FD1F33127B00FF0DA8 /* Build configuration list for PBXNativeTarget "gratiptude" */;
 			buildPhases = (
-				4A853BE3EBA0F86C868D3CEA /* [CP] Check Pods Manifest.lock */,
+				0FEAA780EA0564E2E0A1A032 /* [CP] Check Pods Manifest.lock */,
 				772371D11F33127A00FF0DA8 /* Sources */,
 				772371D21F33127A00FF0DA8 /* Frameworks */,
 				772371D31F33127A00FF0DA8 /* Resources */,
-				7957D034A704D63AA70840AC /* [CP] Embed Pods Frameworks */,
-				476D9981FAB83C35E405B822 /* [CP] Copy Pods Resources */,
+				22B61FADCFAFE93594704598 /* [CP] Embed Pods Frameworks */,
+				8233DF161911C2267B051323 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -205,12 +201,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 772372001F33127B00FF0DA8 /* Build configuration list for PBXNativeTarget "gratiptudeTests" */;
 			buildPhases = (
-				573E77BB8ED7A019E76AF7A0 /* [CP] Check Pods Manifest.lock */,
+				70A64C000797323D6A8B6FD1 /* [CP] Check Pods Manifest.lock */,
 				772371E51F33127B00FF0DA8 /* Sources */,
 				772371E61F33127B00FF0DA8 /* Frameworks */,
 				772371E71F33127B00FF0DA8 /* Resources */,
-				64A0D7552279575964ED1466 /* [CP] Embed Pods Frameworks */,
-				D7E76E836ACB5B8B45BAF628 /* [CP] Copy Pods Resources */,
+				77F34D2A71379C998C9E96BC /* [CP] Embed Pods Frameworks */,
+				103CE01732B31E4C4E04803E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -226,12 +222,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 772372031F33127B00FF0DA8 /* Build configuration list for PBXNativeTarget "gratiptudeUITests" */;
 			buildPhases = (
-				A0DF5614088C21C534605D21 /* [CP] Check Pods Manifest.lock */,
+				FF942B68CCA9B65624CDEE81 /* [CP] Check Pods Manifest.lock */,
 				772371F01F33127B00FF0DA8 /* Sources */,
 				772371F11F33127B00FF0DA8 /* Frameworks */,
 				772371F21F33127B00FF0DA8 /* Resources */,
-				9731841035C9D66E3394B4D7 /* [CP] Embed Pods Frameworks */,
-				0BBD9D6CCBBA9581795FEF34 /* [CP] Copy Pods Resources */,
+				1594963075D7E4B2C6B6B6D6 /* [CP] Embed Pods Frameworks */,
+				15767CCF958432CE3CE47229 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -320,37 +316,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		0BBD9D6CCBBA9581795FEF34 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-gratiptudeUITests/Pods-gratiptudeUITests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		476D9981FAB83C35E405B822 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-gratiptude/Pods-gratiptude-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		4A853BE3EBA0F86C868D3CEA /* [CP] Check Pods Manifest.lock */ = {
+		0FEAA780EA0564E2E0A1A032 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -368,7 +334,67 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		573E77BB8ED7A019E76AF7A0 /* [CP] Check Pods Manifest.lock */ = {
+		103CE01732B31E4C4E04803E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-gratiptudeTests/Pods-gratiptudeTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		15767CCF958432CE3CE47229 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-gratiptudeUITests/Pods-gratiptudeUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1594963075D7E4B2C6B6B6D6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-gratiptudeUITests/Pods-gratiptudeUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		22B61FADCFAFE93594704598 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-gratiptude/Pods-gratiptude-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		70A64C000797323D6A8B6FD1 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -386,7 +412,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		64A0D7552279575964ED1466 /* [CP] Embed Pods Frameworks */ = {
+		77F34D2A71379C998C9E96BC /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -401,40 +427,22 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-gratiptudeTests/Pods-gratiptudeTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		7957D034A704D63AA70840AC /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-gratiptude/Pods-gratiptude-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/TesseractOCRiOS/TesseractOCR.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TesseractOCR.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-gratiptude/Pods-gratiptude-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		9731841035C9D66E3394B4D7 /* [CP] Embed Pods Frameworks */ = {
+		8233DF161911C2267B051323 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "[CP] Embed Pods Frameworks";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-gratiptudeUITests/Pods-gratiptudeUITests-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-gratiptude/Pods-gratiptude-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		A0DF5614088C21C534605D21 /* [CP] Check Pods Manifest.lock */ = {
+		FF942B68CCA9B65624CDEE81 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -450,21 +458,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		D7E76E836ACB5B8B45BAF628 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-gratiptudeTests/Pods-gratiptudeTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -630,15 +623,15 @@
 		};
 		772371FE1F33127B00FF0DA8 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AFFD6499B21AB72D52D0BB57 /* Pods-gratiptude.debug.xcconfig */;
+			baseConfigurationReference = 7455B651C8C5F23A9A918DF6 /* Pods-gratiptude.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = PUQ8TNP3W4;
 				ENABLE_BITCODE = NO;
-				GENERATE_MASTER_OBJECT_FILE = YES;
+				GENERATE_MASTER_OBJECT_FILE = NO;
 				INFOPLIST_FILE = gratiptude/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				OTHER_LDFLAGS = "-lstdc++";
+				OTHER_LDFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.wangela.gratiptude;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
@@ -647,15 +640,15 @@
 		};
 		772371FF1F33127B00FF0DA8 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FD3297EDE8B1736BE4F31CF7 /* Pods-gratiptude.release.xcconfig */;
+			baseConfigurationReference = 51B4C2E3B66B4293C6DBC0CE /* Pods-gratiptude.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = PUQ8TNP3W4;
 				ENABLE_BITCODE = NO;
-				GENERATE_MASTER_OBJECT_FILE = YES;
+				GENERATE_MASTER_OBJECT_FILE = NO;
 				INFOPLIST_FILE = gratiptude/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				OTHER_LDFLAGS = "-lstdc++";
+				OTHER_LDFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.wangela.gratiptude;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
@@ -664,7 +657,7 @@
 		};
 		772372011F33127B00FF0DA8 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 12ADAA81378D824FA6DF370F /* Pods-gratiptudeTests.debug.xcconfig */;
+			baseConfigurationReference = 6DB9801129000A0F6FBA1FA3 /* Pods-gratiptudeTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -679,7 +672,7 @@
 		};
 		772372021F33127B00FF0DA8 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 82E7EC7A4CE3C41EB7CFC6C6 /* Pods-gratiptudeTests.release.xcconfig */;
+			baseConfigurationReference = E3DA00C3DECECB3BF1BC660B /* Pods-gratiptudeTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -694,7 +687,7 @@
 		};
 		772372041F33127B00FF0DA8 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 34042BEDE46BCFC61AB255AC /* Pods-gratiptudeUITests.debug.xcconfig */;
+			baseConfigurationReference = C5EDEB7473F51B5CA1891027 /* Pods-gratiptudeUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = gratiptudeUITests/Info.plist;
@@ -708,7 +701,7 @@
 		};
 		772372051F33127B00FF0DA8 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 803D318FCA96F456D1633240 /* Pods-gratiptudeUITests.release.xcconfig */;
+			baseConfigurationReference = A6F039109E8E6204B87F1A07 /* Pods-gratiptudeUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = gratiptudeUITests/Info.plist;
