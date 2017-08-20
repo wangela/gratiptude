@@ -9,7 +9,7 @@
 import UIKit
 
 
-class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+class ViewController: UIViewController, UINavigationControllerDelegate {
     @IBOutlet weak var billField: UITextField!
     @IBOutlet weak var taxField: UITextField!
     @IBOutlet weak var tipControl: UISegmentedControl!
@@ -22,21 +22,38 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     @IBOutlet weak var venmoSendButton: UIButton!
     @IBOutlet weak var venmoRequestButton: UIButton!
 
-    
-    let imgPicker = UIImagePickerController()
+    let defaults = UserDefaults.standard
     let splitAttribute = [NSFontAttributeName: UIFont.systemFont(ofSize: 16.0, weight: UIFontWeightLight) ]
     var splitNumber = 1 as Int
     var splitAmountString = "0.00" as String
+    
+    func isKeyPresentInUserDefaults(key: String) -> Bool {
+        return UserDefaults.standard.object(forKey: key) != nil
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         // Do any additional setup after loading the view, typically from a nib.
-        let defaults = UserDefaults.standard
-        defaults.set(1, forKey: "myTip")
-        defaults.synchronize()
+        if isKeyPresentInUserDefaults(key: "expiration") {
+            let expiration = defaults.object(forKey: "expiration") as! Date
+            let now = Date.init()
+            if now < expiration {
+                let storedBill = defaults.object(forKey: "bill") as! Double
+                let storedTax = defaults.object(forKey: "tax") as! Double
+                billField.text = String(format: "%.2f", storedBill)
+                taxField.text = String(format: "%.2f", storedTax)
+            } else {
+                billField.becomeFirstResponder()
+            }
+        }
+
+        if !isKeyPresentInUserDefaults(key: "myTip") {
+            defaults.set(1, forKey: "myTip")
+            defaults.synchronize()
+        }
         tipControl.selectedSegmentIndex = defaults.object(forKey: "myTip") as! Int
-        billField.becomeFirstResponder()
-        imgPicker.delegate = self
+
         splitSlider.isContinuous = false
         splitSlider.value = Float(splitNumber)
         venmoRequestButton.layer.borderWidth = 1
@@ -49,8 +66,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        let defaults = UserDefaults.standard
-        let tipIndex = defaults.object(forKey: "myTip") as! Int
+        let tipIndex = defaults.integer(forKey: "myTip")
         tipControl.selectedSegmentIndex = tipIndex
         calculateTip(sender: view)
         print("view will appear")
@@ -63,6 +79,8 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
+        let time = Date.init(timeIntervalSinceNow: 600)
+        defaults.set(time, forKey: "expiration")
         print("view will disappear")
     }
     
@@ -87,6 +105,9 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         let tax = Double(taxField.text!) ?? 0
         let tip = bill * tipPercentages[tipControl.selectedSegmentIndex]
         let total = bill + tax + tip
+        
+        defaults.set(bill, forKey: "bill")
+        defaults.set(tax, forKey: "tax")
         
         billField.text = String(format: "%.2f", bill)
         taxField.text = String(format: "%.2f", tax)

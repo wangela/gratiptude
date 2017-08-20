@@ -4,7 +4,7 @@ graTIPtude is a tip calculator application for iOS.
 
 Submitted by: Angela Yu
 
-Time spent: 5 hours spent in total
+Time spent: 15 hours spent in total
 
 ## User Stories
 
@@ -15,21 +15,30 @@ The following **required** functionality is complete:
 
 The following **optional** features are implemented:
 * [ ] UI animations
-* [ ] Remembering the bill amount across app restarts (if <10mins)
+* [x] Remembering the bill and tax amount across app restarts (if <10mins) *(for demo, if < 5secs)*
 * [ ] Using locale-specific currency and currency thousands separators.
 * [x] Making sure the keyboard is always visible and the bill amount is always the first responder. This way the user doesn't have to tap anywhere to use this app. Just launch the app and start typing.
 
 The following **additional** features are implemented:
+* [x] Layout resizes for different device sizes
+* [x] Splitting the bill with up to 8 people
+* [x] Requesting from or paying to fellow diners the share amount via Venmo
+* [ ] Graceful handling if user does not have Venmo app installed (redirect to app store)
+* [ ] Text recognition through camera view of the bill
 
-- [x] Layout resizes for different device sizes
+### Additional Features Commentary
+1. My original goal for an additional feature was to add a camera button to perform **text recognition** on the receipt. This was done by using the [Tesseract OCR for iOS](https://github.com/gali8/Tesseract-OCR-iOS) library, but I ran into problems when trying to run the app on my actual device to use the camera.  I figured out I need to use the development version instead of the recommended release, so I will try again if I have time.
+
+2. Adding **Venmo** was a workaround. Venmo has closed its API to new apps, so instead I had to use [undocumented deep links](https://blog.alexbeals.com/posts/venmo-deeplinking) to trigger opening the Venmo app and pre-populating it with the amount to request or pay. Thankfully the deep links worked!
 
 ## Video Walkthrough 
 
-Here's a walkthrough of implemented user stories:
+Here are walkthroughs of implemented user stories:
+|v1 |v2|
+|:---:|:---:|
+|![Video walkthrough](anim_gratiptude_v1.gif)|![Video walkthrough](anim_gratiptude_v2.gif)|
 
-![Video walkthrough](anim_gratiptude_v1.gif)
-
-GIF created with [LiceCap](http://www.cockos.com/licecap/).
+GIFs created with [LiceCap](http://www.cockos.com/licecap/).
 
 ## Project Analysis
 
