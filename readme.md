@@ -34,9 +34,10 @@ The following **additional** features are implemented:
 ## Video Walkthrough 
 
 Here are walkthroughs of implemented user stories:
-|v1 |v2|
-|:---:|:---:|
-|![Video walkthrough](anim_gratiptude_v1.gif)|![Video walkthrough](anim_gratiptude_v2.gif)|
+
+| v1 walkthrough | v2 walkthrough |
+|:----:|:----:|
+| ![Video walkthrough](anim_gratiptude_v1.gif) | ![Video walkthrough](anim_gratiptude_v2.gif) |
 
 GIFs created with [LiceCap](http://www.cockos.com/licecap/).
 
