@@ -7,9 +7,9 @@
 //
 
 import UIKit
-import TesseractOCR
+// import TesseractOCR
 
-class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate, G8TesseractDelegate {
+class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate { //, G8TesseractDelegate {
     
     @IBOutlet weak var billField: UITextField!
     @IBOutlet weak var taxField: UITextField!
@@ -44,7 +44,6 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         venmoRequestButton.layer.borderColor = UIColor.darkGray.cgColor
         venmoSendButton.layer.borderWidth = 1
         venmoSendButton.layer.borderColor = UIColor.darkGray.cgColor
-        splitView.isHidden = true
         
 //        if let tesseract:G8Tesseract = G8Tesseract(language:"eng") {
 //            //tesseract.language = "eng+ita";

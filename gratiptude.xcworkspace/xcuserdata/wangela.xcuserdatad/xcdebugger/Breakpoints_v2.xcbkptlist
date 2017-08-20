@@ -2,4 +2,97 @@
 <Bucket
    type = "0"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "gratiptude/ViewController.swift"
+            timestampString = "524898581.249808"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "10"
+            endingLineNumber = "10">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "gratiptude.ViewController.__deallocating_deinit"
+                  moduleName = "gratiptude"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/wangela/gratiptude/gratiptude/ViewController.swift"
+                  timestampString = "524899616.317335"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "12">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "gratiptude.ViewController.init (nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;__ObjC.Bundle&gt;) -&gt; gratiptude.ViewController"
+                  moduleName = "gratiptude"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/wangela/gratiptude/gratiptude/ViewController.swift"
+                  timestampString = "524899616.324099"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "80">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "gratiptude.ViewController.__allocating_init (nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;__ObjC.Bundle&gt;) -&gt; gratiptude.ViewController"
+                  moduleName = "gratiptude"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/wangela/gratiptude/gratiptude/ViewController.swift"
+                  timestampString = "524899616.327504"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "32">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "gratiptude.ViewController.__allocating_init (coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;gratiptude.ViewController&gt;"
+                  moduleName = "gratiptude"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/wangela/gratiptude/gratiptude/ViewController.swift"
+                  timestampString = "524899616.330548"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "12">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "gratiptude.ViewController.init (coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;gratiptude.ViewController&gt;"
+                  moduleName = "gratiptude"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/wangela/gratiptude/gratiptude/ViewController.swift"
+                  timestampString = "524899616.33304"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "40">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>

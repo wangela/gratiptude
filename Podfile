@@ -6,7 +6,7 @@ target 'gratiptude' do
   use_frameworks!
 
   # Pods for gratiptude
-  pod 'TesseractOCRiOS', '4.0.0'
+  pod 'TesseractOCRiOS', :git => 'https://github.com/gali8/Tesseract-OCR-iOS.git'
   
   post_install do |installer|
       installer.pods_project.targets.each do |target|

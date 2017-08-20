@@ -18,6 +18,7 @@
 		772372071F352F5D00FF0DA8 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 772372061F352F5D00FF0DA8 /* SettingsViewController.swift */; };
 		7777516F1F3A6A1000DCFA99 /* tessdata in Resources */ = {isa = PBXBuildFile; fileRef = 7777516E1F3A6A1000DCFA99 /* tessdata */; };
 		778498711F3BA76500D44F18 /* image_sample.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 778498701F3BA76500D44F18 /* image_sample.jpg */; };
+		77EC7F331F49534400671153 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 77EC7F321F49534400671153 /* libz.tbd */; };
 		7ADFE0BCC34AF73F40001009 /* Pods_gratiptude.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67AC55E87BC468C489E96D4B /* Pods_gratiptude.framework */; };
 		A124B6403D3B77AC51F633D3 /* Pods_gratiptudeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C90A161980BA2F3B19D1D0A3 /* Pods_gratiptudeUITests.framework */; };
 /* End PBXBuildFile section */
@@ -60,6 +61,7 @@
 		772372061F352F5D00FF0DA8 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SettingsViewController.swift; path = ../SettingsViewController.swift; sourceTree = "<group>"; };
 		7777516E1F3A6A1000DCFA99 /* tessdata */ = {isa = PBXFileReference; lastKnownFileType = folder; path = tessdata; sourceTree = "<group>"; };
 		778498701F3BA76500D44F18 /* image_sample.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image_sample.jpg; sourceTree = "<group>"; };
+		77EC7F321F49534400671153 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		803D318FCA96F456D1633240 /* Pods-gratiptudeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gratiptudeUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-gratiptudeUITests/Pods-gratiptudeUITests.release.xcconfig"; sourceTree = "<group>"; };
 		82E7EC7A4CE3C41EB7CFC6C6 /* Pods-gratiptudeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gratiptudeTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-gratiptudeTests/Pods-gratiptudeTests.release.xcconfig"; sourceTree = "<group>"; };
 		AFFD6499B21AB72D52D0BB57 /* Pods-gratiptude.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gratiptude.debug.xcconfig"; path = "Pods/Target Support Files/Pods-gratiptude/Pods-gratiptude.debug.xcconfig"; sourceTree = "<group>"; };
@@ -72,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				77EC7F331F49534400671153 /* libz.tbd in Frameworks */,
 				7ADFE0BCC34AF73F40001009 /* Pods_gratiptude.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -98,6 +101,7 @@
 		48AADEF713C3905ACBAEC838 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				77EC7F321F49534400671153 /* libz.tbd */,
 				67AC55E87BC468C489E96D4B /* Pods_gratiptude.framework */,
 				459A69CA92E6691C18AA0257 /* Pods_gratiptudeTests.framework */,
 				C90A161980BA2F3B19D1D0A3 /* Pods_gratiptudeUITests.framework */,
